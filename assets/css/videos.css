@@ -1,0 +1,9 @@
+#main header {
+  background-image: url('/assets/media/videos_header.jpg') !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-attachment: scroll !important;
+}
+iframe{
+  margin-bottom: 50px;
+}

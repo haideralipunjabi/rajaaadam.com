@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/assets/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('/assets/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('/assets/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('/assets/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+#main header {
+  background-image: url('/assets/media/videos_header.jpg') !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-attachment: scroll !important;
+}
+iframe{
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width:1280px)
+{
+ 
+ .wrapper .container{
+    margin-left: 128px;
+    margin-right: 128px;
+  }
+  .achievements_list{
+  width:100%;
+  list-style: none;
+  border-style: groove;
+  border-width: 20px;
+  border-color: white;
+  padding: 40px 40px 40px 40px
+}
+.achievements_list li:nth-of-type(odd)::before {
+    content: "\f091";
+    font-family: FontAwesome;
+    margin-right: 50px;
+    font-size: 2.2em; 
+   color: gold;
+}
+.achievements_list li:nth-of-type(even)::after {
+   content: "\f091";
+   font-family: FontAwesome;
+   margin-left: 50px;
+   color: gold;
+   font-size: 2.2em; 
+}
+.achievements_list li{
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: 150px;
+}
+.achievements_list li:hover{
+  font-size: 50px;
+}
+.achievements_list li:nth-of-type(odd){
+  text-align:left;
+}
+
+
+.achievements_list li:nth-of-type(even){
+  text-align: right;
+}
+}
+
+@media screen and (max-width:1280px)
+{
+  .wrapper .container{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .achievements_list{
+  width:100%;
+  list-style: none;
+}
+.achievements_list li::before {
+    content: "\f091";
+    font-family: FontAwesome;
+    margin-right: 50px;
+    font-size: 2.2em; 
+   color: gold;
+}
+.achievements_list li{
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: 150px;
+}
+}
