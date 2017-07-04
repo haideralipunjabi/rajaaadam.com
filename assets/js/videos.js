@@ -7,7 +7,7 @@ var getVideos = function getVideos(){
     success: function(json){
 
       $(json.videos).each(function(index){
-        $("#videos_container").append('<iframe id="ytplayer" type="text/html" class="4u 12u$(small)" style="float:none;" width="640" height="360" src="https://www.youtube.com/embed/'+this.video_id+'?autoplay=0&origin=http://hackesta.org" frameborder="0"></iframe>');
+        $("#videos_container").append('<div class="4u 12u$(medium)"><iframe id="ytplayer" type="text/html" style="float:none; margin-bottom: 10px;" width="100%" height="360" src="https://www.youtube.com/embed/'+this.video_id+'?autoplay=0&origin=http://hackesta.org" frameborder="0"></iframe><a href="'+this.download_url+'" class="button icon fa-download">Save link as to download<div></div></a></div>');
         //$("#loading").css('display', 'none');
       });
     }
