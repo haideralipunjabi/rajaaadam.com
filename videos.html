@@ -81,5 +81,35 @@
 			});				$("#footer").load("/footer.html");
 				getVideos();
 			</script>
+			<script type="text/javascript">
+			<script>
+// Insert script:
+(function(w, d, s, p, a, c) {
+w.sfButton = w.sfButton || function(){};
+c = d.getElementsByTagName(s)[0];
+a = d.createElement(s);
+a.async=1;
+a.src=p;
+c.parentNode.insertBefore(a, c);
+})(window, document, 'script', '//savefrom.net/js/sf-helper-agent.min.js');
+
+// Text:
+sfButton.text = 'Download';
+
+// Styles:
+sfButton.styles = {
+color: 'rgba(255,255,255,1)',
+textShadow: '-1px -1px 1px rgba(0,0,0,0.3)',
+fontFamily: 'Helvetica,Arial,sans-serif',
+fontSize: '12px',
+borderRadius: '4px',
+backgroundColor: '#e12100',
+'background-image': '-webkit-linear-gradient(#fb2500, #c71d00)',
+'background-image': '-moz-linear-gradient(#fb2500, #c71d00)',
+'background-image': 'linear-gradient(#fb2500, #c71d00)',
+border: 'none'
+};
+</script>
+			</script>
 	</body>
 </html>
