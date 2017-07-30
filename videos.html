@@ -63,6 +63,14 @@
 			<script type="text/javascript" src="assets/js/videos.js">
 				
 			</script>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.3/seedrandom.min.js"></script>
+
+			<script type="text/javascript">
+			function getRandomInt(min, max, seed) {
+				Math.seedrandom(seed);
+
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 			<script type="text/javascript">
 			$("#header").load("/header.html", function(){
 				$('#menu')
@@ -78,7 +86,11 @@
 						target: $('body'),
 						visibleClass: 'is-menu-visible'
 					});
-			});				$("#footer").load("/footer.html");
+			});				$("#footer").load("/footer.html", function(){
+					var date = new Date();
+					seed = date.getHours().toString + date.getMinutes().toString();
+					$("#visitors").html(getRandomInt(1500, 4000, seed));
+				})
 				getVideos();
 			</script>
 			<script type="text/javascript">
