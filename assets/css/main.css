@@ -3833,3 +3833,29 @@ header a{
 header a:hover{
 	text-decoration: none;
 }
+
+/* Current Visitors */
+
+#current_visitors {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #f44336;
+}
+
+#current_visitors p{
+	margin: 0 0 0 0;
+}
+#current_visitors h2{
+	margin: 0 0 0 0;
+}
+@media screen and (max-width: 480px) {
+
+	#current_visitors {
+		position: fixed;
+		width: 100vw;
+		bottom: 0;
+		background-color: #f44336;
+	}
+
+}
